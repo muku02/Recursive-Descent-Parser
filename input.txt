@@ -1,0 +1,96 @@
+# test for a declaration with heavy nesting
+
+var super_nested : record
+  a_depth3: record
+    a_depth2: record
+      a_depth1: record
+        a_depth0: record
+          n: number;
+          str: string;
+	end; #a_depth0
+        b_depth0: record
+	  str: string;
+	  n: number;
+	end; #b_depth0
+      end; #a_depth1
+      b_depth1: record
+        a_depth0: record
+          nx: number;
+	  strx: string;
+	end;
+        b_depth0: record
+	  strx: string;
+	  nx: number;
+	end;
+      end; #b_depth1
+    end; #a_depth2
+    x_depth2: record
+      a_depth1: record
+        a_depth0: record
+	  n: number;
+	  str: string;
+	end;
+        b_depth0: record
+	  str: string;
+	  n: number;
+	end;
+      end; #a_depth1
+      b_depth1: record
+        a_depth0: record
+	  nx: number;
+	  strx: string;
+	end;
+        b_depth0: record
+	  strx: string;
+	  nx: number;
+	end;
+      end; #b_depth1
+    end; #a_depth2
+  end; #a_depth3
+  z_depth3: record
+    x_depth2: record
+      y_depth1: record
+        u_depth0: record
+          n: number;
+          str: string;
+	end;
+        v_depth0: record
+	  str: string;
+	  n: number;
+	end;
+      end; #y_depth1
+      g_depth1: record
+        a_depth0: record
+          nx: number;
+	  strx: string;
+	end;
+        b_depth0: record
+	  strx: string;
+	  nx: number;
+	end;
+      end; #g_depth1
+    end; #x_depth2
+    y_depth2: record
+      a_depth1: record
+        a_depth0: record
+	  n: number;
+	  str: string;
+	end;
+        b_depth0: record
+	  str: string;
+	  n: number;
+	end;
+      end; #a_depth1
+      b_depth1: record
+        a_depth0: record
+	  nx: number;
+	  strx: string;
+	end;
+        b_depth0: record
+	  strx: string;
+	  nx: number;
+	end;
+      end; #b_depth1
+    end; #y_depth2
+  end; #z_depth3
+end; #super_nested
